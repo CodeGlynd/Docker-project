@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nana</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <script src="node_modules/validator/validator.min.js"></script>
+</head>
+
+<body>
+    <div id="display-view">
+        <h1>User Profile</h1>
+        <img src="Connie Springer wallpaper2.jpg" alt="">
+        <span>Name:</span><b id="name">Ali Mohamed</b>
+        <hr/>
+        <span>Email:</span><b id="email">lego@example.com</b>
+        <hr/>
+        <span>interests:</span><b id="interests">DevOps</b>
+        <hr/>
+
+        <button onclick="handleEditProfile()">Edit Profile</button>
+    </div>
+
+
+    <div id="edit-view">
+        <h1>User Profile</h1>
+        <img src="Connie Springer wallpaper2.jpg" alt="">
+        <span>Name:</span>
+        <input type="text" id="input-name" placeholder="enter your name">
+        <hr/>
+        <span>Email:</span>
+        <input type="text" id="input-email" placeholder="example@example.com">
+        <hr/>
+        <span>interests:</span>
+        <input type="text" id="input-interests" placeholder="activities,...">
+        <hr/>
+
+        <button onclick="handleUpdateProfile()">Update Profile</button>
+    </div>
+
+</body>
+
+</html>
